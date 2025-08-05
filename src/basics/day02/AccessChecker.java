@@ -2,7 +2,7 @@ package basics.day02;
 
 import java.util.Scanner;
 
-public class AccesChecker {
+public class AccessChecker {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите ваш возраст: ");
