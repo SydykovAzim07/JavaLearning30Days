@@ -8,8 +8,8 @@ public class ArraySum {
         System.out.println("Введите размер массива (1-10): ");
         int [] arr = new int[sc.nextInt()];
         int result = 0;
-        if (arr.length < 10 && arr.length > 0) {
-            for (int i = 0; i < arr.length; i++) {
+        if (arr.length <= 10 && arr.length > 0) {
+            for (int i = 0; i <= arr.length; i++) {
                 System.out.println("Введите число " + (i + 1) + " :");
                 arr[i] = sc.nextInt();
                 result += arr[i];
