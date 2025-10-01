@@ -7,7 +7,7 @@ public class Circle {
         this.radius = radius;
     }
     public Circle() {
-        radius = 1.0;
+        this (1.0);
     }
     public static double getPI() {
         return PI;

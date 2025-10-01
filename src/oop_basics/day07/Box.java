@@ -5,14 +5,11 @@ public class Box {
     private double width;
     private double height;
     public Box() {
-        length = 1.0;
-        width = 1.0;
-        height = 1.0;
+        this (1.0, 1.0, 1.0);
+
     }
     public Box(double size) {
-        length = size;
-        width = size;
-        height = size;
+       this (size, size, size);
 
     }
     public Box(double length, double width, double height) {

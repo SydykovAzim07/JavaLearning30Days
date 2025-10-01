@@ -7,15 +7,14 @@ public class Employee {
     private double salary;
     private static int employeeCount;
     public Employee(String name) {
-        employeeCount++;
-        this.name = name;
-        salary = 1000.0;
+        this(name ,1000.0);
     }
 
     public Employee(String name, double salary) {
         employeeCount++;
         this.name = name;
-        this.salary = salary;
+        this.salary = (salary > 0) ? salary : 1000.0;
+
     }
 
     public String getName() {
@@ -30,7 +29,7 @@ public class Employee {
         return employeeCount;
     }
     public void printInfo() {
-        System.out.println("Сотрудник: " + name + ", " + "зарплата: " + salary);
+        System.out.printf("Сотрудник: %s, зарплата: %.1f%n", name, salary);
     }
 
     public static void main(String[] args) {
